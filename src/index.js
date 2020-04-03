@@ -1,6 +1,6 @@
 let addToy = false;
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", (loadToys) => {
   const addBtn = document.querySelector("#new-toy-btn");
   const toyForm = document.querySelector(".container");
   addBtn.addEventListener("click", () => {
@@ -12,4 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
       toyForm.style.display = "none";
     }
   });
+  
+  function loadToys() {
+    console.log('hi')
+  }
 });
